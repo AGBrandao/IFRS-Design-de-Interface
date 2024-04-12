@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/geral.css" /> 
+
+    <title>Sobre - Banca da Amazônia</title>
+    <style>table,th,td{border:2px solid black;}</style>
+</head>
+
+<body>
+    <div class="container" >
+    <header>
+        <h1>Banca da Amazônia</h1>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+           
+<h2>Sobre nós</h2>        
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum sagittis turpis a feugiat. Maecenas commodo eget felis sit amet imperdiet. Vivamus sollicitudin felis et justo dignissim, sit amet scelerisque magna tristique. Proin euismod odio quis ligula posuere, et ultricies dui rhoncus. Curabitur vel ipsum vitae arcu feugiat malesuada. Nullam in metus nec odio vestibulum dignissim ac vel sem. Cras rutrum lorem in convallis eleifend. Aliquam nec lectus eu mi porta sagittis. Suspendisse at finibus odio. Phasellus auctor imperdiet mi, at congue ligula fermentum id. Fusce felis sapien, pellentesque nec diam at, bibendum tincidunt mauris. Sed in fringilla dui. In hac habitasse platea dictumst. Sed hendrerit ac mi a posuere. Nunc in justo nisi. Vivamus nec consectetur nibh, eget pretium erat. Sed vehicula urna in tellus fermentum, at aliquet turpis elementum.</p>
+
+        
+        <table class="vendas">
+            <caption>Vendas por região de cada produto</caption>
+            <thead>
+              <tr>
+                <th></th>
+                <th colspan="3">Frutas</th>
+                <th colspan="3">Tubérculos</th>
+                <th colspan="3">Legumes</th>
+                
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Região</th>
+                <th>Abacate</th>
+                <th>Banana</th>
+                <th>Maçã</th>
+                <th>Batata Doce</th>
+                <th>Beterraba</th>
+                <th>Cenoura</th>
+                <th>Amendoim</th>
+                <th>Arroz</th>
+                <th>Feijão</th>
+                </tr>
+                <tr>
+                <td>Norte</td>
+                <td>100</td>
+                <td>50</td>
+                <td>80</td>
+                <td>60</td>
+                <td>40</td>
+                <td>30</td>
+                <td>120</td>
+                <td>80</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>Nordeste</td>
+                <td>120</td>
+                <td>100</td>
+                <td>100</td>
+                <td>80</td>
+                <td>60</td>
+                <td>50</td>
+                <td>150</td>
+                <td>100</td>
+                <td>110</td>
+              </tr>
+              <tr>
+                <td>Centro-Oeste</td>
+                <td>150</td>
+                <td>120</td>
+                <td>90</td>
+                <td>70</td>
+                <td>50</td>
+                <td>40</td>
+                <td>180</td>
+                <td>120</td>
+                <td>130</td>
+            </tr>
+            <tr>
+              <td>Sudeste</td>
+              <td>180</td>
+              <td>150</td>
+              <td>110</td>
+              <td>90</td>
+              <td>70</td>
+              <td>60</td>
+              <td>200</td>
+              <td>150</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>Sul</td>
+              <td>200</td>
+              <td>180</td>
+              <td>120</td>
+              <td>100</td>
+              <td>80</td>
+              <td>70</td>
+              <td>220</td>
+              <td>180</td>
+              <td>170</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td>750</td>
+              <td>600</td>
+              <td>500</td>
+              <td>400</td>
+              <td>300</td>
+              <td>250</td>
+              <td>870</td>
+              <td>630</td>
+              <td>650</td>
+            </tr>
+          </tfoot>
+        </table>
+            
+        <form method="post">
+            <fieldset>
+                <legend>Dados:</legend>
+                <label for="n1">Nome:</label>
+                <input type="text" name="nome" required placeholder="Seu nome" autofocus id="n1"><br>
+                <label for="n1">Endereço:</label>
+                <input type="text" name="nome" required placeholder="Seu endereço" autofocus id="n1"><br>
+                <label for="n1">Cidade/Estado:</label>
+                <input type="text" name="nome" required placeholder="Sua cidade/estado" autofocus id="n1"><br>
+                <label for="t1">Telefone:</label>
+                <input type="tel" name="telefone" maxlength="11" placeholder="Contato" id="t1"><br>
+                <label for="e1">E-mail:</label>
+                <input type="email" name="email" required placeholder="Endereço eletrônico" id="e1"><br>
+                <label for="d1">Data:</label>
+                <input type="date" name="data" required id="d1"><br>
+                Produtos que quero revender:<br><br>
+                <input type="checkbox" name="produto" value="Frutas"> Frutas <br>
+                <input type="checkbox" name="produto" value="Tubérculos"> Legumes <br>
+                <input type="checkbox" name="produto" value="Legumes"> Cereais <br><br>
+                <input type="submit" value="Enviar"><br>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        Rua Rio Amazonas, 99999 - Centro
+        Manaus/AM   -   CEP: 99999-999<br>
+        Telefone: (99) 9 99999-999
+        E-mail: email@email.com
+    </footer>
+</div>
+</body>
+</html>
