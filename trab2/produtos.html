@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/geral.css" /> 
+
+    <title>Banca da Amazônia</title>
+    <style>table,th,td{border:2px solid black;}</style>
+</head>
+
+<body>
+    <div class="container" >
+    <header>
+        <figure>
+            </figure>
+        <h1>Banca de Frutas da Amazônia</h1>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Menu</a></li>  
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+           
+    <ol class="coluna">
+        <li>
+            <figure>
+                <figcaption class="categoria">Frutas</figcaption>
+                <ul class="categoriaMenor">
+                        <li>
+                            <span class="produto">Abacate</span>
+                            <img src="img/Abacate.png" alt="Abacate">
+                        </li>
+                        <li>
+                            <span class="produto">Banana</span>
+                            <img src="img/Banana.png" alt="Banana">
+                        </li>
+                        <li>
+                            <span class="produto">Maçã</span>
+                            <img src="img/Maçã.png" alt="Maçã">
+                        </li>
+                        <li>
+                            <span class="produto">Melancia</span>
+                            <img src="img/Melancia.png" alt="Melancia">
+                        </li>
+                        <li>
+                            <span class="produto">Morango</span>
+                            <img src="img/Morango.png" alt="Morango">
+                        </li>
+                        <li>
+                            <span class="produto">Pêra</span>
+                            <img src="img/Pêra.png" alt="Pêra">
+                        </li>
+                        <li>
+                            <span class="produto">Uva</span>
+                            <img src="img/Uva.png" alt="Uva">
+                        </li>
+                        <li>
+                            <span class="produto">Kiwi</span>
+                            <img src="img/Kiwi.png" alt="Kiwi">
+                        </li>                        
+                </ul>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <figcaption class="categoria">Tubérculos</figcaption>
+                <ul class="categoriaMenor">
+                        <li>
+                            <span class="produto">Batata Doce</span>
+                            <img src="img/Batata Doce.png" alt="Batata Doce">
+                        </li>
+                        <li>
+                            <span class="produto">Beterraba</span>
+                            <img src="img/Beterraba.png" alt="Beterraba">
+                        </li>
+                        <li>
+                            <span class="produto">Cenoura</span>
+                            <img src="img/Cenoura.png" alt="Cenoura">
+                        </li>
+                        <li>
+                            <span class="produto">Gengibre</span>
+                            <img src="img/Gengibre.png" alt="Gengibre">
+                        </li>
+                        <li>
+                            <span class="produto">Inhame</span>
+                            <img src="img/Inhame.png" alt="Inhame">
+                        </li>
+                        <li>
+                            <span class="produto">Mandioca</span>
+                            <img src="img/Mandioca.png" alt="Mandioca">
+                        </li>
+                        <li>
+                            <span class="produto">Nabo</span>
+                            <img src="img/Nabo.png" alt="Nabo">
+                        </li>
+                        <li>
+                            <span class="produto">Rabanete</span>
+                            <img src="img/Rabanete.png" alt="Rabanete">
+                        </li>
+                </ul>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <figcaption class="categoria">Legumes</figcaption>
+                <ul class="categoriaMenor">
+                        <li>
+                            <span class="produto">Amendoim</span>
+                            <img src="img/Amendoim.png" alt="Amendoim">
+                        </li>
+                        <li>
+                            <span class="produto">Arroz</span>
+                            <img src="img/Arroz.png" alt="Arroz">
+                        </li> 
+                        <li>
+                            <span class="produto">Feijão</span>
+                            <img src="img/Feijão.png" alt="Feijão">
+                        </li>
+                        <li>
+                            <span class="produto">Grão-de-bico</span>
+                            <img src="img/Grão-de-bico.png" alt="Grão-de-bico">
+                        </li>
+                        <li>
+                            <span class="produto">Lentilha</span>
+                            <img src="img/Lentilha.png" alt="Lentilha">
+                        </li>
+                        <li>
+                            <span class="produto">Ervilha</span>
+                            <img src="img/Ervilha.png" alt="Ervilha">
+                        </li>
+                        <li>
+                            <span class="produto">Vagem</span>
+                            <img src="img/Vagem.png" alt="Vagem">
+                        </li>
+                        <li>
+                            <span class="produto">Quiabo</span>
+                            <img src="img/Quiabo.png" alt="Quiabo">
+                        </li>
+                </ul>
+            </figure>
+        </li>
+</ol>
+
+        
+<form method="post">
+    <fieldset>
+        <legend>Dados:</legend>
+<label for="n1">Nome:</label>
+<input type="text" name="nome" required placeholder="Seu nome" autofocus id="n1"><br>
+<label for="t1">Telefone:</label><input type="tel" name="telefone" maxlength="11" placeholder="Contato" id="t1"><br>
+<label for="e1">E-mail:</label><input type="email" name="email" required placeholder="Endereço eletônico" id="e1"><br>
+<label for="d1">Data:</label><input type="date" name="data" required id="d1"><br>
+Produto:<br>
+<input type="checkbox" name="produto" value="Frutas"> Frutas <br>
+<input type="checkbox" name="produto" value="Legumes"> Legumes <br>
+<input type="checkbox" name="produto" value="Cereais"> Cereais <br>
+<input type="submit" value="Enviar"><br>
+</fieldset>
+</form>
+
+    </main>
+    <footer>
+        Rua Rio Amazonas, 99999 - Centro
+        Manaus/AM   -   CEP: 99999-999
+    </footer>
+</div>
+</body>
+</html>
