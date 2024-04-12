@@ -1,20 +1,49 @@
- @import url("reset.css"); 
+@import url("reset.css"); 
 @import url("fonte.css");
 
 body {
   color: black;
   background-color: #c1d8a1;
+  min-width: 360px;
+  max-width: 1920px;
 }
 header {
   text-align: center;
-  height: 10vh;
   border: 3px solid #73AD21;
   background-color:green ;
-  padding: 20px;
+  padding: 2vh;
   margin: 1vh;
-  h1 {color: black; font-family: 'roboto', Times;font-size: 5vw; }
-
+  display: flex;
+  flex-direction: row;  
+  align-items: center;  
+  justify-content: center;  
+}
+header img {
+  max-height: 100px; 
+  margin-right: 20px;
+}
+header h1 {
+  color: black;
+  font-family: 'roboto', Times;
+  font-size: 5vw; 
+  min-width: 10vw;
+  max-width: 50vw;
+  margin: 0 auto;
+  line-height: 100px;
+} 
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
   }
+  header img {
+    margin-bottom: 10px;
+  }
+  header h1 {
+    font-size: 3.5vw; 
+    line-height: initial;
+  }
+}
 .menu {
   list-style: none;
   padding: 0;
@@ -50,6 +79,8 @@ header {
   text-align: center;
   font-size: 24px;
 }
+
+/*Produtos*/
 .categoria {
   font-weight: bold;    
 }
@@ -71,13 +102,6 @@ header {
   min-width: 160px;
   object-fit: cover; 
 }
-.vendas {  border-collapse: collapse;  width: auto; margin: 2vh;}
-.vendas caption {  font-weight: bold;  font-size: 1.2em;  margin-bottom: 10px;}
-.vendas th, .vendas td {  border: 1px solid #ddd;  padding: 8px;  text-align: center;}
-.vendas th {  background-color: #f2f2f2;}
-.vendas tfoot {font-weight: bold;}
-.vendas tfoot td {background-color: #f2f2f2;}
-
 footer {
   border: 3px solid #73AD21;
   background-color:green ;  
@@ -86,6 +110,88 @@ footer {
   margin: 1vh;
   margin-top: 4vh;
   width: 100%; 
+}
+
+h6 {
+  color: black;
+  margin: 1vh;
+}
+
+.numpag:hover {
+  color: blue;
+}
+.numpag {
+  display: inline;  /* para colocar todos os elementos numa mesma linha */
+}
+.num1:hover, .num2:hover, .num3:hover, .num4:hover, .num5:hover {
+  color: blue;
+}
+
+/*Sobre*/
+
+h2 {
+  text-align: center;
+  margin-top: 5vh;
+}
+p {
+  text-align: left;
+  margin: 2vw;
+}
+.vendas {
+  border-collapse: collapse;
+  width: auto;
+  margin: 0 auto; /* Define as margens laterais automáticas para centralizar a tabela */
+}
+.vendas caption {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.vendas th, .vendas td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.vendas th {
+  background-color: #f2f2f2;
+}
+.vendas tfoot {
+  font-weight: bold;
+}
+.vendas tfoot td {
+  background-color: #f2f2f2;
+}
+form {
+  margin: 3vw;
+  padding: 2vw;
+  background-color: #3ab95636;
+}
+fieldset {
+  border: 2px solid green;
+  padding: 1vw;
+  margin-bottom: 2vw;
+}
+legend {
+  font-weight: bold;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+input[type="checkbox"] {
+  margin-left: 5px;
+}
+input[type="submit"] {
+  padding: 10px;
+  background-color: green;
+  color: black;
+}
+input[type="submit"]:hover {
+  background-color: darkgreen;
 }
 
 
