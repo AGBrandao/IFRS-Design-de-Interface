@@ -1,0 +1,99 @@
+ @import url("reset.css"); 
+@import url("fonte.css");
+
+body {
+  color: black;
+  background-color: #c1d8a1;
+}
+header {
+  text-align: center;
+  height: 10vh;
+  border: 3px solid #73AD21;
+  background-color:green ;
+  padding: 20px;
+  margin: 1vh;
+  h1 {color: black; font-family: 'roboto', Times;font-size: 5vw; }
+
+  }
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 1vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1vw;
+}
+.menu li {
+  font-weight: bold;
+  text-align: center;
+}
+.menu li a {
+  display: block;
+  padding: 10px 20px; 
+  color: rgb(0, 0, 0); 
+  text-decoration: none; 
+  background-color: green; 
+  border: 2px solid rgb(0, 0, 0); 
+  border-radius: 5px; 
+  transition: background-color 0.3s, color 0.3s;
+}
+.menu li a:hover {
+  background-color: darkgreen;
+  color: rgb(0, 0, 0); 
+}  
+.coluna {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15vw; 
+  list-style-type: none; 
+  padding: 10;
+  text-align: center;
+  font-size: 24px;
+}
+.categoria {
+  font-weight: bold;    
+}
+.categoriaMenor {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  font-size: 16px;
+}
+.produto {
+  margin-bottom: 10px;
+}
+.coluna img {
+  display: block;
+  width: 100%;
+  height: auto;  
+}
+.vendas {  border-collapse: collapse;  width: auto; margin: 2vh;}
+.vendas caption {  font-weight: bold;  font-size: 1.2em;  margin-bottom: 10px;}
+.vendas th, .vendas td {  border: 1px solid #ddd;  padding: 8px;  text-align: center;}
+.vendas th {  background-color: #f2f2f2;}
+.vendas tfoot {font-weight: bold;}
+.vendas tfoot td {background-color: #f2f2f2;}
+
+footer {
+  border: 3px solid #73AD21;
+  background-color:green ;  
+  padding: 20px;
+  text-align: center;
+  margin: 1vh;
+  margin-top: 4vh;
+  width: 100%; 
+}
+
+
+/*  
+.container {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-rows: auto;
+  gap: 20px;
+  grid-template-areas: 
+  "header header header header "
+  "main main . sidebar"
+  "footer footer footer footer";
+} */
