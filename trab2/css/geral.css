@@ -66,7 +66,10 @@ header {
 .coluna img {
   display: block;
   width: 100%;
-  height: auto;  
+  height: 100%;  
+  min-height: 160px;
+  min-width: 160px;
+  object-fit: cover; 
 }
 .vendas {  border-collapse: collapse;  width: auto; margin: 2vh;}
 .vendas caption {  font-weight: bold;  font-size: 1.2em;  margin-bottom: 10px;}
