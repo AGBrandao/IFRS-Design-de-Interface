@@ -6,6 +6,7 @@ body {
   background-color: #c1d8a1;
   min-width: 360px;
   max-width: 1920px;
+  font-family: 'roboto', Times;
 }
 header {
   text-align: center;
@@ -70,38 +71,6 @@ header h1 {
   background-color: darkgreen;
   color: rgb(0, 0, 0); 
 }  
-.coluna {
-  display: grid; 
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 15vw; 
-  list-style-type: none; 
-  padding: 10;
-  text-align: center;
-  font-size: 24px;
-}
-
-/*Produtos*/
-.categoria {
-  font-weight: bold;    
-}
-.categoriaMenor {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  list-style: none;
-  font-size: 16px;
-}
-.produto {
-  margin-bottom: 10px;
-}
-.coluna img {
-  display: block;
-  width: 100%;
-  height: 100%;  
-  min-height: 160px;
-  min-width: 160px;
-  object-fit: cover; 
-}
 footer {
   border: 3px solid #73AD21;
   background-color:green ;  
@@ -112,16 +81,134 @@ footer {
   width: 100%; 
 }
 
+/*Principal*/
+
+.apresentacao {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 1vw;
+  margin: 2vw;
+  font-size: 3vw;
+  color: darkgreen;
+  font-weight: bolder;
+}
+.apresentacao img{
+  height: 70vh;
+  width: 50vw;
+}
+.produtosEmDestaque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 2vw;
+}
+.produtosEmDestaque a {
+  color: black;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  width: 20%;
+  margin: 2.5vw;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+}
+.card p {
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-align: center;
+
+}
+.quemSomos {
+  display: flex;
+  max-width: 100%;
+  text-align: center;
+  font-size: 2vw;
+  align-items: center;
+  margin: 2vw;
+}
+.quemSomos a {
+  color: black;
+}
+.quemSomos p {
+  font-size: 1.5vw;
+}
+.quemSomos img{
+  height: 70vh;
+  width: 50vw;
+}
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+}
+.fotos img{
+  height: 45vh;
+  width: 45vw;
+  object-fit: cover; 
+  margin: 2vh;
+}
+
+.cliente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cliente img{
+  height: 80vh;
+  width: 40vw;
+  object-fit: cover; 
+  margin: 5vh;
+}
+.cliente h2{
+  margin: 5vh;
+  font-size: 3vw;
+}
+/*Produtos*/
+.coluna {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  list-style-type: none; 
+  padding: 2vw;
+  text-align: center;
+  font-size: 4vw;
+}
+.categoria {
+  font-weight: bold;    
+}
+.categoriaMenor {
+  margin: 2vw;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+.produto {
+  margin-bottom: 2vh;
+}
+.coluna img {
+  display: block;
+  height: 25vh;
+  width: 25vw;
+}
+.produto {
+font-weight: bold;
+font-size: 2.5vw;
+}
 h6 {
   color: black;
   margin: 1vh;
 }
-
 .numpag:hover {
   color: blue;
 }
 .numpag {
-  display: inline;  /* para colocar todos os elementos numa mesma linha */
+  display: inline; 
 }
 .num1:hover, .num2:hover, .num3:hover, .num4:hover, .num5:hover {
   color: blue;
@@ -140,7 +227,7 @@ p {
 .vendas {
   border-collapse: collapse;
   width: auto;
-  margin: 0 auto; /* Define as margens laterais automáticas para centralizar a tabela */
+  margin: 0 auto;
 }
 .vendas caption {
   font-weight: bold;
@@ -193,16 +280,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: darkgreen;
 }
-
-
-/*  
-.container {
-  display: grid;
-  grid-template-columns: 25vw 25vw 25vw 25vw;
-  grid-template-rows: auto;
-  gap: 20px;
-  grid-template-areas: 
-  "header header header header "
-  "main main . sidebar"
-  "footer footer footer footer";
-} */
