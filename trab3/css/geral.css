@@ -14,7 +14,21 @@ header {
   padding: 1vw;
   min-width: 10vw;
   max-width: 50vw;
-  animation: alternate (10, 10);
+  opacity: 1; /* Inicialmente invisível */
+}
+header:hover {
+  animation: colorChange  1s forwards;
+}
+@keyframes colorChange  { /* ANIMATION */
+  0% {
+    background-color: #4CAF50;
+}
+50% {
+    background-color: #FF9800;
+}
+100% {
+    background-color: #F44336;
+}
 }
 header h1 {
   font-size: auto; 
@@ -39,11 +53,16 @@ header h1 {
   border: 2px solid rgb(0, 0, 0); 
   border-radius: 5px; 
   text-align: center;
-  transition: background-color 0.8s; /* TRANSITION */
+  transition: background-color 0.5s ease, transform 0.1s ease; /* TRANSITION */
 }
 .menu li a:hover {
-  background-color: darkgreen;
+  background-color: yellow;
+  transform: scale(1.1);
 }  
+.menu li a:focus {
+  background-color: red;
+  transform: scale(1.1);
+}
 /* ----------------------------- */
 .flex-container {
   display: flex;
@@ -82,9 +101,6 @@ header h1 {
 }
 .col {
   padding: 1vw;
-}
-.card {
-  max-width: 200px;
 }
 .card-text {
   color: black;
