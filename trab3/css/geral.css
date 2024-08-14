@@ -71,12 +71,10 @@ header h1 {
   justify-content: center;
   margin: 2vw;
 }
-
 .coluna {
   min-width: 40vw;
   max-width: 80vw; 
 }
-
 .imagem {
   display: flex;
   flex-direction: row;
@@ -85,7 +83,6 @@ header h1 {
   margin: 2vw;
   max-width: 100%;
 }
-
 .texto {  
   color: black;
   font-family: 'roboto', Times;
@@ -171,11 +168,10 @@ header h1 {
   .flex-container {
     flex-direction: column;
     align-items: center;
-}   
+  }   
 }
 @media only screen and (min-width: 1201px) {
   .card {
-    max-width: 350px; /* Tamanho máximo do cartão para telas grandes */
+    max-width: 350px;
   }
-
 }
