@@ -31,7 +31,6 @@ header:hover {
 }
 }
 header h1 {
-  font-size: auto; 
   font-weight: bold;
 } 
 .menu {
@@ -85,7 +84,6 @@ header h1 {
   color: black;
   font-family: 'roboto', Times;
   text-align: center;  
-  font-size: auto; 
 }
 /* -------------------------------------------- */
 .card-container {
@@ -100,9 +98,7 @@ header h1 {
 .card-text {
   color: black;
   font-family: 'roboto', Times;
-  text-align: center;  
-  font-size: auto; 
-}
+  text-align: center;  }
 .card-container {
   display: flex;
   justify-content: center;
