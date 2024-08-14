@@ -42,12 +42,10 @@ header h1 {
   position: sticky;
   top: 0;
   gap: 10px;
-}
-.menu li {
   font-weight: bold;
   text-align: center;
 }
-.menu li a {
+.menu a {
   display: block;
   background-color: green; 
   border: 2px solid rgb(0, 0, 0); 
@@ -55,11 +53,11 @@ header h1 {
   text-align: center;
   transition: background-color 0.5s ease, transform 0.1s ease; /* TRANSITION */
 }
-.menu li a:hover {
+.menu a:hover {
   background-color: yellow;
   transform: scale(1.1);
 }  
-.menu li a:focus {
+.menu a:focus {
   background-color: red;
   transform: scale(1.1);
 }
@@ -108,7 +106,6 @@ header h1 {
 .card-container {
   display: flex;
   justify-content: center;
-
 }
 .card {
   border: 1px solid green;
@@ -174,4 +171,5 @@ header h1 {
   .card {
     max-width: 350px;
   }
+
 }
