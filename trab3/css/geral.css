@@ -43,6 +43,7 @@ header h1 {
   gap: 10px;
   font-weight: bold;
   text-align: center;
+  z-index:1;
 }
 .menu a {
   display: block;
