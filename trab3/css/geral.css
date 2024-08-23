@@ -92,6 +92,7 @@ header h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 2vw;
+    z-index:2;
 }
 .col {
   padding: 1vw;
